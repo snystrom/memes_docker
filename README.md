@@ -16,12 +16,18 @@ To get latest container version
 docker pull snystrom/memes_docker:devel
 ```
 
-To launch the container
+To launch the container for demo purposes:
+```
+docker run -e PASSWORD=<password> -p 8787:8787 snystrom/memes_docker:devel
+```
+
+To launch the container and mount an analysis directory
 ```
 docker run -e PASSWORD=<password> -p 8787:8787 -v <path>/<to>/<project>:/tmp/<project> snystrom/memes_docker:devel
 ```
 
-Connect to the instance by visiting: [localhost:8787](localhost:8787) in your web browser.
+Connect to the instance by visiting: [localhost:8787](localhost:8787) in your
+web browser. Username: `rstudio`, Password: `<password>` defined above.
 
 ## Licensing
 The code for generating this container is licensed under an [MIT License](LICENSE).
