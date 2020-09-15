@@ -1,6 +1,6 @@
 # {memes} Docker container
 
-![Docker Automated build](https://img.shields.io/docker/automated/snystrom/memes_docker?style=flat-square)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/snystrom/memes_docker?style=flat-square)
 
 A docker container for motif analysis in R using the
 [memes](github.com/snystrom/memes) packge. Currently, this container is build
@@ -26,7 +26,7 @@ To launch the container and mount an analysis directory
 docker run -e PASSWORD=<password> -p 8787:8787 -v <path>/<to>/<project>:/tmp/<project> snystrom/memes_docker:devel
 ```
 
-Connect to the instance by visiting: [localhost:8787](localhost:8787) in your
+Connect to the instance by visiting: `localhost:8787` in your
 web browser. Username: `rstudio`, Password: `<password>` defined above.
 
 ## Licensing
